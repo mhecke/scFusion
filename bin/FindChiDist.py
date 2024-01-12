@@ -688,7 +688,7 @@ for key in sorted(linedic, key=linedic.__getitem__, reverse=True):
     pos2 = info[9]
     if read.find('N') > -1:
         continue
-    if len(read) == 60 or True:
+    if len(read) == 60:
         readfile.write(read + '\t' + splitpos + '\t' + chromo1 + ':' + pos1 + ':' + info[-2] + '\t' + chromo2 + ':' +
                        pos2 + ':' + info[-1] + '\n')
         print(key)
